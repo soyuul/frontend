@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>for문</h2>
+    <script>
+        document.write('for문 위쪽의 문장 <br>');
+        for(let i = 0; i < 2; i++){
+            document.write(i + '정소율');
+            document.write('<br>');
+        }
+        document.write('for문 아래쪽 문장');
+
+        document.write('<br>');
+        document.write('<h2>실습</h2>');
+        // 1 2 3 4 5 6 ... 10 출력
+        document.write('<h4>1 2 3 4 5 6 ... 10 출력</h4>');
+        for(let i = 1; i < 11; i++){
+            document.write(i + ' ');
+        }
+
+        // 10 9 8 7 6 5 ... 1 출력
+        document.write('<h4>10 9 8 7 6 5 ... 1 출력</h4>');
+        for(let i = 10; i > 0; i--){
+            document.write(i + ' ');
+        }
+
+        // 1부터 10까지 총합 출력
+        document.write('<h4>1부터 10까지 총합 출력</h4>');
+        let total = 0;
+        for(let i = 1; i <= 10; i++){
+            document.write(`i : ${i}, total : ${total}<br>`);
+            total = total + i;
+            document.write(`더해진 후 total : ${total}<br>`);
+        }
+        document.write('<br>');
+        total = document.write('총합 : ' + total + '<br>');
+
+        // 1부터 10까지 누적 곱 출력
+        document.write('<h4>1부터 10까지 누적 곱 출력</h4>');
+        let res = 1;
+        for(let i = 1; i <= 10; i++){
+            res = res * i;
+        }
+        document.write('결과 : ' + res + '<br>');
+        
+        // 1부터 100까지 숫자 중 3의 배수 출력 3 6 9 12 ... 99
+ //       document.write('<h4>1부터 100까지 숫자 중 3의 배수 출력 3 6 9 12 ... 99</h4>');
+//        for (let i = 1; i <= 100; i++) {
+ //           if (i % 3 == 0) {
+  //              document.write(i = ' ');
+ //           }
+ //       }
+//
+//        document.write('<br>');
+ //       for (let i = 1; i <= 100; i++) {
+ //           if (i % 3 != 0) {
+ //               continue;
+ //           }
+ //           document.write(i + ' ');
+ //       }
+ //       document.write('<br>');
+
+        document.write('<h4>---3단---<br></h4>');
+        for(let i =1; i <= 9; i++){
+            document.write(`3 X ${i} = ${3 * i}<br>`);
+        }
+//
+        document.write('<br>');
+
+        for (let i = 0; i < 10; i++) {
+            if(i == 2) {
+                continue;
+            }
+            document.write(i + ' ');
+        }
+
+        //
+        let a = 10;
+        let name = '정소율';
+        document.write(name + '님의 나이는' + a + '입니다<br>');
+        document.write(`${name}님의 나이는 ${a}입니다<br>`);
+    </script>
+</body>
+</html>

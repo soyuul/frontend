@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>whlie문</h2>
+    <script>
+        document.write('<br>');
+
+        let num = Math.floor(Math.random() * 10);
+        while(num !=5) {
+            document.write(`랜덤 결과는 ${num}입니다<br>`);
+            num = Math.floor(Math.random() * 10);
+        }
+
+        document.write('<br><br>');
+        while(true){
+            let num2 =Math.floor(Math.random() * 10);
+            if (num2 % 2 == 0){
+                continue;
+            }
+            if(num2 == 5){
+                break; // 자신을 감싸는 while문 즉시 종료
+            }
+            document.write(`두번째 시도 랜덤값:${num2}<br>`);
+        }
+
+        document.write('<br><br>');
+
+        let num3 = 0;
+        do{
+            let num3 = Math.floor(Math.random() * 10);
+            document.write(`결과 : ${nem3}<br>`);
+        }while(num3 != 5);
+    </script>
+</body>
+</html>
