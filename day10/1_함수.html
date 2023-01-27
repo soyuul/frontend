@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>함수</h2>
+    <script>
+        console.log('프로그램 시작');
+        let res = add(20 ,10, 30);
+        console.log(`res: ${res}`);
+        console.log('프로그램 종료');
+
+        console.log('두번째 사용');
+        add(100, 200);
+        console.log('두번째 사용 종료');
+
+        function add(a, b, c = 50){ // '= 50'(기본매개 변수 *뒤에서부터 차례로 넣어주어야한다)
+            console.log(`a의 값 : ${a}`);
+            console.log(`b의 값: ${b}`);
+            console.log(`c의 값 ${c}`);
+            console.log(`세 수를 더한 값: ${a + b +c}`);
+            return '안녕'; // 함수 사용 결과를 return 옆에 있는 값으로 되돌려주는 역할을 한다
+        }
+    </script>
+</body>
+</html>
